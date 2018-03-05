@@ -1,10 +1,12 @@
-package com.vedmitryapps.lifeup;
+package com.vedmitryapps.lifeup.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.vedmitryapps.lifeup.R;
 
 public class StatusActivity extends AppCompatActivity {
 

@@ -2,8 +2,12 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#493373</color>
-    <color name="colorAccent">#388e3c</color>
+    <color name="colorAccent">#00dad9</color>
     <color name="main_gradient_start_color">#493373</color>
     <color name="main_gradient_end_color">#6e4da8</color>
     <color name="whiteTextColor">#ffffff</color>
+
+
+    <color name="status_bg_color">#bebdc3</color>
+
 </resources>
