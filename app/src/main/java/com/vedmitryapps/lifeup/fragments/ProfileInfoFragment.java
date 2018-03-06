@@ -22,4 +22,7 @@ public class ProfileInfoFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_personal_info, container, false);
     }
 
+
+
+
 }

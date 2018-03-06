@@ -1,5 +1,6 @@
 package com.vedmitryapps.lifeup.activities;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -144,5 +145,17 @@ public class MainActivity extends AppCompatActivity
         Log.i("TAG", "dialog");
         StatusDialog dialog = new StatusDialog(this);
         dialog.show();
+    }
+
+    public void startCommentActivity(View v){
+
+        Intent intent = new Intent(this, CommentsActivity.class);
+        this.startActivity(intent);
+    }
+
+    public void startUsersOnLineActivity(View v){
+
+        Intent intent = new Intent(this, UsersOnlineActivity.class);
+        this.startActivity(intent);
     }
 }

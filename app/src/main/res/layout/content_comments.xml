@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vedmitryapps.lifeup.activities.CommentsActivity"
+    tools:showIn="@layout/app_bar_comments">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/barat" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Sacha Noam Baron Cohen"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:text="Режисер"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView4"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Android Studio includes a tool called Image Asset Studio that helps you generate your own app icons from material icons, custom images, and text strings. It generates a set of icons at the appropriate resolution for each generalized screen density that your app supports. Image Asset Studio places the newly generated icons in density-specific folders under the res/ directory in your project. At runtime, Android uses the appropriate resource based on the screen density of the device your app is running on."
+            />
+
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/textView"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/izv" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Roger Coony"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:text="Toothbrusher"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView4"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Image Asset Studio helps you create various types of icons at different densities and shows you exactly where they'll be placed in your project. The following sections describe the icon types that you can create and the image and text inputs that you can use." />
+
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/textView"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ava" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Animal Cruel"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:text="Pet"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView4"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Image Asset Studio makes it easy for you to import Google material icons in VectorDrawable and PNG formats: simply select an icon from a dialog. For more information, see Material Icons."  />
+
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/textView"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dibil" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Эдик "
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+
+            android:layout_toRightOf="@id/imageView4"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:text="Охранник"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        <TextView
+            android:textSize="@dimen/comment_text_size"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView4"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="The string resources for a project are contained in strings.xml files. Your project has a default strings.xml file that contains string resources in the default language for your app, which is the language you expect most of your app users to speak. You can also have translated strings.xml files that contain string resources for other languages that you want your app to accommodate."/>
+
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/textView"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+</ScrollView>
