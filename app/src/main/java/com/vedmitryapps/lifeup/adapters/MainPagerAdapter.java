@@ -3,12 +3,12 @@ package com.vedmitryapps.lifeup.adapters;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
+import com.vedmitryapps.lifeup.fragments.DialogListFragment;
 import com.vedmitryapps.lifeup.fragments.ProfileFragment;
 import com.vedmitryapps.lifeup.fragments.SimpleFragment;
 
@@ -34,7 +34,7 @@ public class MainPagerAdapter extends FragmentPagerAdapter implements ViewPager.
             case 2:
                 return new SimpleFragment();
             case 3:
-                return new DialogFragment();
+                return new DialogListFragment();
             case 4:
                 return new SimpleFragment();
         }
