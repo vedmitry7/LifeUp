@@ -1,10 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:editTextColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
 
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
@@ -22,6 +24,8 @@
         <item name="tabIndicatorHeight">0dp</item>
         <item name="tabPaddingStart">0dp</item>
         <item name="tabPaddingEnd">0dp</item>
+
+
     </style>
 
     <style name="ProfileInfoTabLayout" parent="Widget.Design.TabLayout">
@@ -29,6 +33,13 @@
         <item name="tabIndicatorHeight">2dp</item>
         <item name="tabBackground">@drawable/tab_background_select</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Search button icon -->
+        <item name="searchIcon">@drawable/ic_search_icon</item>
+        <item name="closeIcon">@drawable/ic_search_icon</item>
     </style>
 
 </resources>

@@ -1,14 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
+    android:background="#098765"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.RecyclerView
-        android:paddingTop="22dp"
-        android:id="@+id/recyclerView"
+    <RelativeLayout
+        android:id="@+id/toolbarContainer"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageButton
+                android:background="@drawable/ic_drawer_button_white"
+                android:onClick="drawerSwicher"
+                android:id="@+id/burger_button"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/lifeUpLabel"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="16dp"
+                android:layout_toRightOf="@+id/burger_button"
+                android:textSize="20sp"
+                android:text="LifeUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_below="@+id/lifeUpLabel"
+                android:id="@+id/chat"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:paddingLeft="16dp"
+                android:layout_toRightOf="@+id/burger_button"
+                android:textSize="12sp"
+                android:text="chats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SearchView
+                style="@style/MySearchViewStyle"
+                android:layout_alignParentRight="true"
+                android:id="@+id/simpleSearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/white"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
 
 </android.support.constraint.ConstraintLayout>
