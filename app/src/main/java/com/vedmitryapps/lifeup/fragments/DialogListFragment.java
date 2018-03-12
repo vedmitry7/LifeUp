@@ -2,8 +2,10 @@ package com.vedmitryapps.lifeup.fragments;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -38,13 +40,15 @@ public class DialogListFragment extends Fragment {
 
     DialogListAdapter dialogListAdapter;
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_diallog, container, false);
+        View view = inflater.inflate(R.layout.pager_fragment_diallogs, container, false);
         ButterKnife.bind(this, view);
 
-        container.setPadding(0, getStatusBarHeight(),0,0);
+        //container.setPadding(0, getStatusBarHeight(),0,0);
+       // container.setPaddingRelative(0,getStatusBarHeight(),0,0);
         dialogListAdapter = new DialogListAdapter();
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(dialogListAdapter);

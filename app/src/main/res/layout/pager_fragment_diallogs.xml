@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
+    android:fitsSystemWindows="true"
     android:background="#098765"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -62,7 +63,6 @@
         </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
-            android:layout_marginBottom="24dp"
             android:background="@android:color/white"
             android:layout_below="@+id/toolbar"
             android:id="@+id/recyclerView"
@@ -72,7 +72,6 @@
         </android.support.v7.widget.RecyclerView>
 
     </RelativeLayout>
-
 
 
 
