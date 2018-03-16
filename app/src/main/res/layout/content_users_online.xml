@@ -8,8 +8,6 @@
     tools:context="com.vedmitryapps.lifeup.activities.UsersOnlineActivity"
     tools:showIn="@layout/app_bar_users_online">
 
-
-
  <LinearLayout
      android:orientation="vertical"
      android:layout_width="match_parent"

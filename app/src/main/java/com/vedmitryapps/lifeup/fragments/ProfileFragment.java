@@ -24,7 +24,6 @@ public class ProfileFragment extends Fragment {
 
     @BindView(R.id.profileViewPager)
     ViewPager viewPager;
-
     @BindView(R.id.profileTabs)
     TabLayout tabLayout;
     @BindView(R.id.profileInfoContainer)
@@ -34,7 +33,7 @@ public class ProfileFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.pager_fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_pager_profile, container, false);
         ButterKnife.bind(this, view);
 
         ProfilePagerAdapter pagerAdapter = new ProfilePagerAdapter(getChildFragmentManager(), tabLayout);
@@ -42,7 +41,7 @@ public class ProfileFragment extends Fragment {
         viewPager.addOnPageChangeListener(pagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
-       // profileInfoContainer.setPadding(0,getStatusBarHeight(),0,0);
+        profileInfoContainer.setPadding(0,getStatusBarHeight(),0,0);
        // profileInfoContainer.setPaddingRelative(0,getStatusBarHeight(),0,0);
 
         return view;

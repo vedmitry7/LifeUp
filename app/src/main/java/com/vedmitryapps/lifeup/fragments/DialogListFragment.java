@@ -44,7 +44,7 @@ public class DialogListFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.pager_fragment_diallogs, container, false);
+        View view = inflater.inflate(R.layout.fragment_pager_diallogs, container, false);
         ButterKnife.bind(this, view);
 
         //container.setPadding(0, getStatusBarHeight(),0,0);

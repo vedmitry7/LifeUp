@@ -21,7 +21,6 @@ public class StatusDialog extends Dialog {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_status);
 
-
         Button setButton = findViewById(R.id.setStatus_btn);
         setButton.setOnClickListener(new View.OnClickListener() {
             @Override

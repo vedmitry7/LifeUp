@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void drawerSwicher(View view) {
+    public void drawerSwitcher(View view) {
 
         drawer.openDrawer(Gravity.LEFT);
     }
